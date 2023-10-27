@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+        padding: 0;
+    box-sizing: border-box;
+    font-family: "Young Serif";    
+}
+P, .header, .galeria1 {
+    font-family: "Young Serif";;
+}
+.slogan {
+    font-size: 1.5rem;
+}
+img {
+    max-width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #17a398;  
+    border-bottom: 10px solid orange; 
+
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    max-width: 10000px;
+    
+}
+.linknav {
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-titulo {
+    font-weight: 800;
+    font-size: 2rem; 
+}
+.img1 {
+    margin-left: 10rem;
+    padding: 3rem 2rem;
+    width: 85%;
+    height: 42rem;
+}
+.hero {
+    background-color: #17a398;
+}
+.img3 {
+    max-height: 38.2rem;
+    max-width: 100%;
+}
+.galeria-tit {
+    text-align: center;
+    background-color: #e2aedd;
+    height: 3em;
+    font-size: xx-large;
+    margin: 1rem;
+}
+.galeria1 {
+    padding-block: 1em;
+    align-items: center;
+}
+.galeria-container {
+    max-width: 100%;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-evenly;
+}
+.footer, .footer1, .footer2, .footer3, .footer4, .footer5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2rem;
+    gap: 1rem;
+    background-color: #17a398;
+}
+.footer-icons {
+    display: flex;
+    gap: 1rem;
+}	
+.footer-icons a{
+    color: #e2aedd;
+    font-size: 2rem;
+}
+.form-contacto {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.info-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.form-contacto p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.form-contacto a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.form-contacto i {
+    color: orange;
+    margin-right: 10px;
+    font-size: x-large;
+}
+.form-contacto form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #e2aedd;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.form-contacto form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.form-contacto .btn-enviar{
+    pad: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background-color: orange;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.form-contacto .btn-enviar:hover {
+    background: #17a398;
+}
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.acordeon {
+    background: #17a398;
+}
+.acordeon label {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: #e2aedd;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover {
+    background: orange;
+}
+.acordeon .contenido-acordeon {
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+@media screen and (max-width:900px) {
+    .contenedor-acordeon{
+    width: 90%;
+
+}
+}
+.contacto {
+    text-decoration: none;
+}
+.footer1, .footer2, .footer3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.gal {
+    margin-left: 4rem;
+    margin-block: 4rem;
+}
+div.galeria {
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 orange, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 350px;
+}
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+div.galeria:hover{
+    border: 1px solid #17a398;
+    transform: rotate(-5deg);
+}
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vh;
+}
+.card{
+    margin-bottom: 10px;
+}
+.card-text, .card-title{
+    text-align: center;
+}
