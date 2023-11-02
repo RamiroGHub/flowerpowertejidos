@@ -1,47 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
-* {
-    margin: 0;
-        padding: 0;
+*{
     box-sizing: border-box;
-    font-family: "Young Serif";    
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif';
+    font-size: 13px;
 }
-P, .header, .galeria1 {
-    font-family: "Young Serif";;
-}
-.slogan {
-    font-size: 1.5rem;
-}
-img {
-    max-width: 100%;
-}
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #17a398;  
-    border-bottom: 10px solid orange; 
 
+body{
+    background-color: #fff59d;
 }
-.menu {
-    list-style: none;
+
+.header{
+    background-color: #17a398;
     display: flex;
-    gap: 1rem;
-    max-width: 10000px;
-    
-}
-.linknav {
-    text-decoration: none;
-}
-.logo {
-    display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
+    height: 85px;
+    padding: 5px 10%;
 }
-.logo-titulo {
-    font-weight: 800;
-    font-size: 2rem; 
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #17a398;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
 }
 .img1 {
     margin-left: 10rem;
@@ -66,6 +99,7 @@ img {
 .galeria1 {
     padding-block: 1em;
     align-items: center;
+    max-width: 100%;
 }
 .galeria-container {
     max-width: 100%;
@@ -194,20 +228,30 @@ img {
 @media screen and (max-width:900px) {
     .contenedor-acordeon{
     width: 90%;
-
+    
 }
 }
 .contacto {
     text-decoration: none;
 }
-.footer1, .footer2, .footer3 {
+.footer1{
     position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer2{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+.footer3{
     bottom: 0;
     width: 100%;
 }
 .gal {
     margin-left: 4rem;
     margin-block: 4rem;
+    position: relative;
 }
 div.galeria {
     margin: 10px 20px;
