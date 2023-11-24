@@ -1,0 +1,97 @@
+
+textarea {
+	width: 100%;
+	padding: 15px 10px;
+	font-size: 15px;
+	border: 1px solid $color_4;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+}
+.contenedor-acordeon {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 80px;
+	h2 {
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 35px;
+	}
+}
+.acordeon {
+	background: $color_3;
+	label {
+		display: block;
+		padding: 20px;
+		font-size: 20px;
+		background: $color_4;
+		color: $color_7;
+		cursor: pointer;
+		margin-bottom: 2px;
+		transition: all 300ms ease;
+		&:hover {
+			background: orange;
+		}
+	}
+	.contenido-acordeon {
+		padding: 0px;
+		margin: 0px 20px;
+		max-height: 0px;
+		overflow: hidden;
+		transition: all 300ms ease;
+	}
+}
+.btn-acordeon {
+	&:checked {
+		~ {
+			.contenido-acordeon {
+				max-height: 600px;
+				padding: 15px 0px;
+			}
+		}
+	}
+	display: none;
+}
+.contacto {
+	text-decoration: none;
+}
+.gal {
+	margin-left: 4rem;
+	margin-block: 4rem;
+	position: relative;
+}
+div.galeria {
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px 0 $color_6, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float: left;
+	width: 350px;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	&:hover {
+		border: 1px solid $color_3;
+		transform: rotate(-5deg);
+	}
+}
+.slide {
+	margin-top: 10px;
+	img {
+		height: 65vh;
+	}
+}
+.card {
+	margin-bottom: 10px;
+}
+.card-text {
+	text-align: center;
+}
+.card-title {
+	text-align: center;
+}
+@media screen and (max-width:900px) {
+	.contenedor-acordeon {
+		width: 90%;
+	}
+}

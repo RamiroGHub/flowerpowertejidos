@@ -1,0 +1,31 @@
+.img1 {
+	margin-left: 10rem;
+	padding: 3rem 2rem;
+	width: 85%;
+	height: 42rem;
+}
+.hero {
+	background-color: $color_3;
+}
+.img3 {
+	max-height: 38.2rem;
+	max-width: 100%;
+}
+.galeria-tit {
+	text-align: center;
+	background-color: $color_4;
+	height: 3em;
+	font-size: xx-large;
+	margin: 1rem;
+}
+.galeria1 {
+	padding-block: 1em;
+	align-items: center;
+	max-width: 100%;
+}
+.galeria-container {
+	max-width: 100%;
+	display: flex;
+	margin-inline: auto;
+	justify-content: space-evenly;
+}
